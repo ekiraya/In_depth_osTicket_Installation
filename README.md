@@ -70,27 +70,31 @@ This tutorial outlines the prerequisites and installation of an open-source help
 <img src="https://i.imgur.com/LFJlr5r.png"  height="25%" width="25%"/>
 
 <br>
-<p>Now how iis works is that our iis server whenever it needs to read php files will try to look for some executable that it can use to know how to processs said files. Due to the simple fact we already intalled all the files necessary to use php into our computer we know for a fact those files exist. Only that our iis server doesnt know where to find them and as such it is unable to use them. The process of making our iis server aware of where to find the php files is called php version registration</p>
+<p>Now how iis works is that whenever our iis server needs to read php files it will try to look for some executable that it can use to know how to processs said files. Due to the simple fact we already intalled all the files necessary to use php into our computer we know for a fact those files exist. Only that our iis server doesnt know where to find them and as such it is unable to use them. The process of making our iis server aware of where to find the php files is called php version registration</p>
 <p>To make the process of registering a new php version to our iis server easier we need to run <code>php manager for iis</code></p>
 <img src="https://i.imgur.com/dGq6emB.png"  height="25%" width="25%"/>
-<p>This is a tool will create an icon within the main page of our iis that we can simply click to go to a page that will allow us to register a new php version</p>
 
-<p>Once thats finished we can go to our iis managment console, and we should see a <code>php manager</code> option</p>
+
+<p>Once thats finished we can use the windows search bar to look for the iis managmente console and click it</p> 
+<img src="https://i.imgur.com/82etMyo.png"  height="25%" width="25%"/>
+<p>This will open our iis managment console, and we should see a <code>php manager</code> icon in the main page</p>
 <img src="https://i.imgur.com/82etMyo.png"  height="25%" width="25%"/>
 <p>that is the option we just created by running <code>php manager for iis</code></p>
 
-<p>after that whole process we can finally register our new php version by clicking the aforementioned option and just clicking the register a new php version button and then just opening the <code>php-cgi.exe</code> from the php folder we previously created at <code>C:\php</code></p>
+<p>To finally register our new php version we need to click the aforementioned icon to move into this page</p>
+<img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
+<p>And there we must click the register a new php version button and then we browser to the <code>C:\php</code> folder we created a couple steps before and simply select <code>php-cgi.exe</code> and click open</p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
 
 <h3>Enable url rewrite</h3>
-<p>then we have to run <code>rewrite_amd64_en-US</code> to enable url rewrite</p>
-<img src="https://i.imgur.com/Z2F3sie.png"  height="25%" width="25%"/>
-
-<p>url re write allows the user or in this case osticket to configure rules to map any given url to any other url</p>
+<p>Url re write allows the user or in this case osticket to configure rules to map any given url to any other url</p>
 <p>this is better explained with an example, with url rewrite we can for instance take the url <code>http://localhost/article/342/some-article-title</code> and configure rules within our iis server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
-<p>we need to enable this on our osticket vm bcos os ticket constantlly converts any x url to y url</p>
+<p>we need to enable this on our osticket vm because osticket constantlly converts urls</p>
 <p>for instance ostickets needs to switch from <code>http://127.0.0.1/setup/</code> to <code>http://127.0.0.1/setup/install.php</code></p>
 <p>and this is type of url switching is essential to its funtioning, manily due to the fact the php files mentioned before expect certain specific url and if those urls are not provided or are provided in a form that is not expected errors may arise</p>
+
+<p>To enable url rewrite we have to run <code>rewrite_amd64_en-US</code></p>
+<img src="https://i.imgur.com/Z2F3sie.png"  height="25%" width="25%"/>
 
 <h3>Microsoft Visual C++ Redistributable</h3>
 <p>when you creeate an aplication in the c progaming language family it is almost imposible that you dont rely on libraries</p>
