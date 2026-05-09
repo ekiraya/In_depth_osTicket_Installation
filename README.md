@@ -86,12 +86,12 @@ This tutorial outlines the prerequisites and installation of an open-source help
 <p>And there we must click the register a new php version button and then we browser to the <code>C:\php</code> folder we created a couple steps before and simply select <code>php-cgi.exe</code> and click open</p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
 
+
+
 <h3>Enable url rewrite</h3>
 <p>Url re write allows the user or in this case osticket to configure rules to map any given url to any other url</p>
 <p>this is better explained with an example, with url rewrite we can for instance take the url <code>http://localhost/article/342/some-article-title</code> and configure rules within our iis server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
-<p>we need to enable this on our osticket vm because osticket constantlly converts urls</p>
-<p>for instance ostickets needs to switch from <code>http://127.0.0.1/setup/</code> to <code>http://127.0.0.1/setup/install.php</code></p>
-<p>and this is type of url switching is essential to its funtioning, manily due to the fact the php files mentioned before expect certain specific url and if those urls are not provided or are provided in a form that is not expected errors may arise</p>
+<p>we need to enable this on our osticket vm because of two reasons first of, osticket constantlly converts urls and doing so is essential to its functioning. And secondly, the php files mentioned before that osticket uses to run expect certain specific url and if those urls are not provided or are provided in a form that is not expected errors may arise</p>
 
 <p>To enable url rewrite we have to run <code>rewrite_amd64_en-US</code></p>
 <img src="https://i.imgur.com/Z2F3sie.png"  height="25%" width="25%"/>
