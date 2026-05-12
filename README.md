@@ -122,6 +122,7 @@ This tutorial outlines the prerequisites and installation of an open-source help
 some of these extensions may not appear so here are the links to download them
 and we just go and add them
 yeah likely problems with different versions
+thay get copied
 
 |Php extention name   |Php filename   |Download link   |
 |---|---|---|
