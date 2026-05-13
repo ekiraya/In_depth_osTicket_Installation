@@ -3,7 +3,7 @@
 </p>
 
 <h1>osTickets installation</h1>
-This tutorial outlines the prerequisites and installation of an open-source help desk ticketing system namely osTickets.<br/>
+<p>This tutorial outlines the prerequisites and installation of an open-source help desk ticketing system namely osTickets.</p>
 
 <h2>Environments and Technologies Used</h2>
 
