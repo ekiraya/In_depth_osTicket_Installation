@@ -31,11 +31,13 @@ This tutorial outlines the prerequisites and installation of an open-source help
 |PHP Manager for iis |https://github.com/RonaldCarter/PHPManager/releases/download/V1.5.0/PHPManagerForIIS_V1.5.0.msi   |
 |URL Rewrite Installer   |https://download.microsoft.com/download/1/2/8/128E2E22-C1B9-44A4-BE2A-5859ED1D4592/rewrite_amd64_en-US.msi   |
 |Microsoft Visual C++ Redistributable (2015-2022)   |https://download.visualstudio.microsoft.com/download/pr/40b59c73-1480-4caf-ab5b-4886f176bf71/435A0DE411B991E2BFC7FD1D5439639E7B32206960D3099370E36172018F52FE/VC_redist.x86.exe   |
-|osTicket installation files   |https://github.com/osTicket/osTicket/releases/download/v1.18.3/osTicket-v1.18.3.zip   |
+|osTicket installation files   |https://github.com/osTicket/osTicket/releases/download/v1.15.8/osTicket-v1.15.8.zip   |
 
 <p>You should go requirment by requierment clicking the links on the table to download it. After you are done, you should have the following files in your download folder.</p>
 <img src="https://i.imgur.com/f5kHs53.png"  height="35%" width="35%"/>
 
+> [!IMPORTANT]
+>This tutorial is using the 1.15.8 realse of osticket, if you wanna use other version be aware that thay may cause some errors with php extentions and other parts of the tutorial
 
 <h3>Installing iis</h3>
 <p>To start installing ostickets first we have to install iis.</p>
