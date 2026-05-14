@@ -3,7 +3,8 @@
 </p>
 
 <h1>osTicket installation</h1>
-<p>This tutorial outlines the prerequisites and installation of an open-source help desk ticketing system namely osTicket.</p>
+<p>This tutorial outlines the prerequisites and installation of an open-source help desk ticketing system, namely osTicket.</p>
+<p>It also contains a simple explanation of what each component is and why it is necessary to install it for osTicket to function correctly.</p>
 
 <h2>Environments and Technologies Used</h2>
 
@@ -23,7 +24,7 @@
 <h2>Installation process</h2>
 
 <h3>Downloading the necessary files</h3>
-<p>For installing osTicket, we have to start by downloading the necessary files to our vm/computer, im personally using a vm so hencefoward i will be saying our vm. For this porpuse we could either go and search for them ourselves or download a zip, even though the option of donwloading the zip may appear faster and easier it has the drawback of potentially causing segurity issues due to the simple fact that we dont know if the files on the zip are the original ones or a modified version. Given our situation i think its best to go ahead and search for the files manually. Nevertheless to make the process easier i have compiled a little table with all the requirments and the original links to everyone of them</p>
+<p> To install osTicket, we have to start by downloading the necessary files to our VM/computer. I'm personally using a VM, so henceforth I will be saying our VM. For this porpuse we could either go and search for them ourselves or download a zip, even though the option of donwloading the zip may appear faster and easier it has the drawback of potentially causing segurity issues due to the simple fact that we dont know if the files on the zip are the original ones or a modified version. Given our situation i think its best to go ahead and search for the files manually. Nevertheless to make the process easier i have compiled a little table with all the requirments and the original links to everyone of them</p>
 
 |Requierment   |Original download link   |
 |---|---|
