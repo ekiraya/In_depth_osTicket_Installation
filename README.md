@@ -119,9 +119,9 @@
 <p>once the extraction is finished we can just replace the files on the <code>C:\inetpub\wwwroot</code> folder with the files of the upload folder and our default webpage is now </p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
 
-<h3>Php Extentions</h3>
 
 <h4>troubleshooting</h4>
+<h5>troubleshooting</h5>
 some of these extensions may not appear so here are the links to download them
 and we just go and add them
 yeah likely problems with different versions
