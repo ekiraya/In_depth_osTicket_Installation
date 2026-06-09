@@ -36,6 +36,7 @@
 |mysql (original)   |https://downloads.mysql.com/archives/get/p/23/file/mysql-5.5.62-win32.msi   |
 |mysql (the one i just downloaded btw)   |https://dev.mysql.com/downloads/file/?id=523569   |
 |heidisql |http://www.heidisql.com/installers/HeidiSQL_12.3.0.6589_Setup.exe   |
+|heidisql (new) |https://github.com/HeidiSQL/HeidiSQL/releases/download/12.17/HeidiSQL_12.17.0.7270_Setup.exe   |
 
 <p>You should go requirment by requierment clicking the links on the table to download it. After you are done, you should have the following files in your download folder.</p>
 <img src="https://i.imgur.com/f5kHs53.png"  height="35%" width="35%"/>
