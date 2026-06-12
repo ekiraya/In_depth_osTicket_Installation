@@ -24,7 +24,7 @@
 <h2>Installation process</h2>
 
 <h3>Downloading the necessary files</h3>
-<p>To install osTicket, we need to download the necessary files to our VM/computer. I'm currently using a VM, so going forward, I'll use our VM. For this purpose, we could either go and search for them ourselves or download a zip. Even though downloading the zip may seem faster and easier, it carries the risk of security issues because we don't know whether the files in the zip have been tampered with. Given our situation, I think its best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
+<p>To install osTicket, we need to download the necessary files to our VM/computer. I'm currently using a VM, so going forward, I'll use our VM. For this purpose, we could either go and search for them ourselves or download a zip. Even though downloading the zip may seem faster and easier, it carries the risk of security issues because we don't know whether the files in the zip have been tampered with. Given our situation, I think it's best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
 
 |Requierment   |Original download link   |
 |---|---|
@@ -40,7 +40,7 @@
 <img src="https://i.imgur.com/f5kHs53.png"  height="35%" width="35%"/>
 
 > [!IMPORTANT]
->This tutorial is using the 1.15.8 realse of osTicket, and the 7.3.8 realease of php, if you wanna use other version of either one be aware that thay may cause some errors with php extentions, compatibility and other parts of the tutorial
+>This tutorial is using the 1.15.8 release of osTicket and the 7.3.8 release of PHP. If you wanna use another version of either one, be aware that they may cause some errors with PHP extensions, compatibility, and other parts of the tutorial
 
 <h3>Installing iis</h3>
 <p>To start installing osTicket first we have to install iis.</p>
