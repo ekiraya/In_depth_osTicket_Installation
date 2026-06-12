@@ -33,8 +33,8 @@
 |URL Rewrite Installer   |https://download.microsoft.com/download/1/2/8/128E2E22-C1B9-44A4-BE2A-5859ED1D4592/rewrite_amd64_en-US.msi   |
 |Microsoft Visual C++ Redistributable (2015-2022)   |https://download.visualstudio.microsoft.com/download/pr/40b59c73-1480-4caf-ab5b-4886f176bf71/435A0DE411B991E2BFC7FD1D5439639E7B32206960D3099370E36172018F52FE/VC_redist.x86.exe   |
 |osTicket installation files   |https://github.com/osTicket/osTicket/releases/download/v1.15.8/osTicket-v1.15.8.zip   |
-|mysql   |https://downloads.mysql.com/archives/get/p/23/file/mysql-5.5.62-win32.msi   |
-|heidisql |https://github.com/HeidiSQL/HeidiSQL/releases/download/12.17/HeidiSQL_12.17.0.7270_Setup.exe   |
+|MySQL   |https://downloads.mysql.com/archives/get/p/23/file/mysql-5.5.62-win32.msi   |
+|HeidiSQL |https://github.com/HeidiSQL/HeidiSQL/releases/download/12.17/HeidiSQL_12.17.0.7270_Setup.exe   |
 
 > [!IMPORTANT]
 >This tutorial is using the 1.15.8 release of osTicket and the 7.3.8 release of PHP. If you wanna use another version of either one, be aware that they may cause some errors with PHP extensions, compatibility, and other parts of the tutorial
