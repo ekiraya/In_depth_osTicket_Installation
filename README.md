@@ -40,7 +40,7 @@
 >This tutorial is using the 1.15.8 release of osTicket and the 7.3.8 release of PHP. If you wanna use another version of either one, be aware that they may cause some errors with PHP extensions, compatibility, and other parts of the tutorial
 
 <p>You should go requirement by requirement, clicking the links on the table to download it. After you are done, you should have the following files in your download folder.</p>
-<img src="https://i.imgur.com/f5kHs53.png"  height="35%" width="35%"/>
+<img src="https://i.imgur.com/FviBLIz.png"  height="35%" width="35%"/>
 
 <h3>Installing iis</h3>
 <p>To start installing osTicket first we have to install iis.</p>
