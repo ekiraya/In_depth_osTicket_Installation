@@ -24,7 +24,7 @@
 <h2>Installation process</h2>
 
 <h3>Downloading the necessary files</h3>
-<p>To install osTicket, we need to download the necessary files to our VM/computer. I'm personally using a VM, so henceforth I will be using our VM. For this purpose, we could either go and search for them ourselves or download a zip, even though the option of downloading the zip may appear faster and easier, it has the drawback of potentially causing security issues due to the simple fact that we don't know if the files on the zip have been tampered with. Given our situation i think its best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
+<p>To install osTicket, we need to download the necessary files to our VM/computer. I'm currently using a VM, so going forward, I'll use our VM. For this purpose, we could either go and search for them ourselves or download a zip. Even though downloading the zip may seem faster and easier, it carries the risk of security issues because we don't know whether the files in the zip have been tampered with. Given our situation, I think its best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
 
 |Requierment   |Original download link   |
 |---|---|
@@ -36,7 +36,7 @@
 |mysql   |https://downloads.mysql.com/archives/get/p/23/file/mysql-5.5.62-win32.msi   |
 |heidisql |https://github.com/HeidiSQL/HeidiSQL/releases/download/12.17/HeidiSQL_12.17.0.7270_Setup.exe   |
 
-<p>You should go requirment by requierment clicking the links on the table to download it. After you are done, you should have the following files in your download folder.</p>
+<p>You should go requirement by requirement, clicking the links on the table to download it. After you are done, you should have the following files in your download folder.</p>
 <img src="https://i.imgur.com/f5kHs53.png"  height="35%" width="35%"/>
 
 > [!IMPORTANT]
