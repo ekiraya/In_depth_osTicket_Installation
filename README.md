@@ -26,6 +26,7 @@
 <h3>Downloading the necessary files</h3>
 <p>To install osTicket, we need to download the necessary files to our VM/computer. I'm currently using a VM, so going forward, I'll use our VM. For this purpose, we could either go and search for them ourselves or download a zip. Even though downloading the zip may seem faster and easier, it carries the risk of security issues because we don't know whether the files in the zip have been tampered with. Given our situation, I think it's best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
 
+<br>
 |Requierment   |Original download link   |
 |---|---|
 |PHP Programing language |https://downloads.php.net/~windows/releases/archives/php-7.3.8-nts-Win32-VC15-x86.zip   |
@@ -36,11 +37,11 @@
 |mysql   |https://downloads.mysql.com/archives/get/p/23/file/mysql-5.5.62-win32.msi   |
 |heidisql |https://github.com/HeidiSQL/HeidiSQL/releases/download/12.17/HeidiSQL_12.17.0.7270_Setup.exe   |
 
-<p>You should go requirement by requirement, clicking the links on the table to download it. After you are done, you should have the following files in your download folder.</p>
-<img src="https://i.imgur.com/f5kHs53.png"  height="35%" width="35%"/>
-
 > [!IMPORTANT]
 >This tutorial is using the 1.15.8 release of osTicket and the 7.3.8 release of PHP. If you wanna use another version of either one, be aware that they may cause some errors with PHP extensions, compatibility, and other parts of the tutorial
+
+<p>You should go requirement by requirement, clicking the links on the table to download it. After you are done, you should have the following files in your download folder.</p>
+<img src="https://i.imgur.com/f5kHs53.png"  height="35%" width="35%"/>
 
 <h3>Installing iis</h3>
 <p>To start installing osTicket first we have to install iis.</p>
