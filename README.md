@@ -26,7 +26,6 @@
 <h3>Downloading the necessary files</h3>
 <p>To install osTicket, we need to download the necessary files to our VM/computer. I'm currently using a VM, so going forward, I'll use our VM. For this purpose, we could either go and search for them ourselves or download a zip. Even though downloading the zip may seem faster and easier, it carries the risk of security issues because we don't know whether the files in the zip have been tampered with. Given our situation, I think it's best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
 
-<br>
 |Requierment   |Original download link   |
 |---|---|
 |PHP Programing language |https://downloads.php.net/~windows/releases/archives/php-7.3.8-nts-Win32-VC15-x86.zip   |
