@@ -24,7 +24,7 @@
 <h2>Installation process</h2>
 
 <h3>Downloading the necessary files</h3>
-<p>To install osTicket, we need to download the necessary files to our VM/computer. I'm currently using a VM, so going forward, I'll use our VM. For this purpose, we could either go and search for them ourselves or download a zip. Even though downloading the zip may seem faster and easier, it carries the risk of security issues because we don't know whether the files in the zip have been tampered with. Given our situation, I think it's best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
+<p>To install osTicket, we need to download the necessary files to our VM/computer. I'm currently using a VM, so I'll use our VM going forward. For this purpose, we could either go and search for them ourselves or download a zip. Even though downloading the zip may seem faster and easier, it carries a security risk because we don't know whether the files in the zip have been tampered with. Given our situation, I think it's best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
 
 |Requierment   |Original download link   |
 |---|---|
@@ -43,18 +43,18 @@
 <img src="https://i.imgur.com/FviBLIz.png"  height="35%" width="35%"/>
 
 <h3>Installing iis</h3>
-<p>To start installing osTicket first we have to install iis.</p>
-<p>Think about a webpage, for a webpage to run there needs to be a server somewhere that hosts it. We can think of a server pretty much just as someone elses computer.</p>
-<p>With the help of iis, we can give our vm the capacity to act like a server, that is to run webpages within itself.</p>
-<p>To install iis we can either go to <code>turn windows features on or off</code> or to the add roles and features option on the server managmente window, which one you chose depends on your operating system</p>
-<p>Once there we can simply click on the iis option</p>
+<p>To start installing osTicket, first we have to install IIS.</p>
+<p>Think about a webpage. For a webpage to run, there needs to be a server somewhere that hosts it. We can think of a server pretty much just as someone else's computer.</p>
+<p>With the help of IIS, we can give our VM the capacity to act like a server, that is, to run webpages within itself.</p>
+<p>To install IIS, we can either go to <code>turn Windows features on or off</code> or to the add roles and features option on the server management window, which one you choose depends on your operating system</p>
+<p>Once there, we can simply click on the IIS option</p>
 <img src="https://i.imgur.com/XdgT50E.png"  height="35%" width="35%"/>
-<p>Make sure we also enable the cgi option within the aplication development toggle</p>
+<p>Make sure we also enable the CGI option within the application development toggle</p>
 <img src="https://i.imgur.com/D9731Ft.png"  height="35%" width="35%"/>
 
 <br>
-<p><code>127.0.0.1</code> is the loop back address, normally its porpuse its to ping to the vm itself. But after we install our iis server we can also use it to browse to the webpage now hosted on our vm by simplfy typing it in the browser</p>
-<p>When you do that something like this should show up</p>
+<p><code>127.0.0.1</code> is the loopback address, normally its porpuse its to ping to the VM itself. But after we install our IIS server, we can also use it to browse to the webpage now hosted on our VM by simply typing it in the browser</p>
+<p>When you do that, something like this should show up</p>
 <img src="https://i.imgur.com/jErzqYk.png"  height="35%" width="35%"/>
 <br>
 
