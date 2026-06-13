@@ -94,8 +94,9 @@
 <img src="https://i.imgur.com/zhqiYhu.png"  height="25%" width="25%"/>
 <p>And there we must click the register a new PHP version button, and then we browse to the <code>C:\php</code> folder we created a couple of steps before and simply select <code>php-cgi.exe</code> and click open</p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
-
-
+<p>After clicking the open button, we should end up with a page looking somewhat like this</p>
+<img src="https://i.imgur.com/EZ6NS9G.png"  height="25%" width="25%"/>
+<p>Notice how where it says php executable, it is pointing at our <code>php-cgi.exe</code> route</p>
 
 <h3>Enable url rewrite</h3>
 <p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
