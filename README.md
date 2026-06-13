@@ -43,14 +43,18 @@
 <img src="https://i.imgur.com/FviBLIz.png"  height="35%" width="35%"/>
 
 <h3>Installing iis</h3>
-<p>To start installing osTicket, first we have to install IIS.</p>
+<p>To start installing osTicket, first, we have to install IIS. </p>
 <p>Think about a webpage. For a webpage to run, there needs to be a server somewhere that hosts it. We can think of a server pretty much just as someone else's computer.</p>
 <p>With the help of IIS, we can give our VM the capacity to act like a server, that is, to run webpages within itself.</p>
-<p>To install IIS, we can either go to <code>turn Windows features on or off</code> or to the add roles and features option on the server management window, which one you choose depends on your operating system</p>
+<p>To install IIS, we can either go to <code>turn Windows features on or off</code> or to the server management window, which one you choose depends on your operating system</p>
+<img src="https://i.imgur.com/xIrqmPz.png" height="25%" width="25%"/>
+<p>Then, we go to the Add Roles and Features option</p>
+<img src="https://i.imgur.com/axxeIOb.png" height="25%" width="25%"/>
 <p>Once there, we can simply click on the IIS option</p>
 <img src="https://i.imgur.com/XdgT50E.png"  height="35%" width="35%"/>
 <p>Make sure we also enable the CGI option within the application development toggle</p>
 <img src="https://i.imgur.com/D9731Ft.png"  height="35%" width="35%"/>
+<p>And then we simply keep clicking next until we get the option to install</p>
 
 <br>
 <p><code>127.0.0.1</code> is the loopback address, normally its porpuse its to ping to the VM itself. But after we install our IIS server, we can also use it to browse to the webpage now hosted on our VM by simply typing it in the browser</p>
@@ -58,15 +62,15 @@
 <img src="https://i.imgur.com/jErzqYk.png"  height="35%" width="35%"/>
 <br>
 
-<p>Webpages usually run with code, normally some convination of: html, css, javascript</p>
-<p>The webpage the we are now selfhosting is no exception it also runs using code and we can actually see that code if we go to <code>C:\inetpub\wwwroot</code></p>
+<p>Webpages usually run with code, normally some combination of HTML, CSS, JavaScript </p>
+<p>The webpage that we are now self-hosting is no exception; it also runs using code, and we can actually see that code if we go to <code>C:\inetpub\wwwroot</code></p>
 <img src="https://i.imgur.com/oCKY3Gx.png"  height="35%" width="35%"/>
-<p>Importantlly, we can not only observe this code. We can actually modify it to turn our self hosted webpage into a totally different webpage. And that is exactly what we will be doing to install osTicket</p> 
+<p> Importantly, we can not only observe this code. We can actually modify it to turn our self-hosted webpage into a totally different webpage. And that is exactly what we will be doing to install osTicket</p> 
 
 <h3>PHP configurartion</h3>
-<p>Php is a programing language primarly used in webpage development. It is also the language that osTicket is programmed in; thus, we must install it and configure our iis server to use it before we can use osTicket</p>
+<p> PHP is a programming language primarily used in webpage development. It is also the language that osTicket is programmed in; thus, we must install it and configure our iis server to use it before we can use osTicket</p>
 
-<p>To install php we firslly have to extract the <code>php zip</code> which contains all the files necesarry for the language to be used</p>
+<p>To install PHP, we first have to extract the <code>php zip</code> which contains all the files necessary for the language to be used</p>
 <img src="https://i.imgur.com/HHmJDkN.png"  height="25%" width="25%"/>
 
 <p>Then we need to go to <code>C:\</code> and create a folder called php</p>
@@ -75,64 +79,48 @@
 <img src="https://i.imgur.com/LFJlr5r.png"  height="25%" width="25%"/>
 
 <br>
-<p>Now how iis works is that whenever our iis server needs to read php files it will try to look for some executable that it can use to know how to processs said files. Due to the simple fact we already intalled all the files necessary to use php into our computer we know for a fact those files exist. Only that our iis server doesnt know where to find them and as such it is unable to use them. The process of making our iis server aware of where to find the php files is called php version registration</p>
-<p>To make the process of registering a new php version to our iis server easier we need to run <code>php manager for iis</code></p>
+<p>Now, how IIS works is that whenever our IIS server needs to read PHP files, it will try to look for some executable that it can use to know how to process said files. Due to the simple fact that we already installed all the files necessary to use PHP on our computer, we know for a fact that those files exist. Only that our IIS server doesn't know where to find them, and as such, it is unable to use them. The process of making our IIS server aware of where to find the PHP files is called PHP version registration</p>
+<p>To make the process of registering a new PHP version to our IIS server easier, we need to run <code>php manager for iis</code></p>
 <img src="https://i.imgur.com/dGq6emB.png"  height="25%" width="25%"/>
 
 
-<p>Once thats finished we can use the windows search bar to look for the iis managmente console and click it</p> 
+<p>Once that's finished, we can use the Windows search bar to look for the IIS Management Console and click it</p> 
 <img src="https://i.imgur.com/82etMyo.png"  height="25%" width="25%"/>
-<p>This will open our iis managment console, and we should see a <code>php manager</code> icon in the main page</p>
+<p>This will open our IIS management console, and we should see a <code>php manager</code> icon in the main page</p>
 <img src="https://i.imgur.com/82etMyo.png"  height="25%" width="25%"/>
 <p>that is the option we just created by running <code>php manager for iis</code></p>
 
-<p>To finally register our new php version we need to click the aforementioned icon to move into this page</p>
+<p>To finally register our new PHP version, we need to click the aforementioned icon to move into this page</p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
-<p>And there we must click the register a new php version button and then we browser to the <code>C:\php</code> folder we created a couple steps before and simply select <code>php-cgi.exe</code> and click open</p>
+<p>And there we must click the register a new PHP version button, and then we browse to the <code>C:\php</code> folder we created a couple of steps before and simply select <code>php-cgi.exe</code> and click open</p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
-
-
 
 <h3>Enable url rewrite</h3>
-<p>Url re write allows the user or in this case osTicket to configure rules to map any given url to any other url</p>
-<p>this is better explained with an example, with url rewrite we can for instance take the url <code>http://localhost/article/342/some-article-title</code> and configure rules within our iis server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
-<p>we need to enable this on our osTicket VM because of two reasons first of, osTicket constantlly converts urls and doing so is essential to its functioning. And secondly, the php files mentioned before that osTicket uses to run expect certain specific url and if those urls are not provided or are provided in a form that is not expected errors may arise</p>
+<p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
+<p> This is better explained with an example. With URL rewrite, we can, for instance, take the URL <code>http://localhost/article/342/some-article-title</code> and configure rules within our IIS server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
+<p> We need to enable this on our osTicket VM for two reasons. First, osTicket constantly converts URLs, and doing so is essential to its functioning. And secondly, the PHP files mentioned before that osTicket uses to run expect certain specific URLs, and if those URLs are not provided or are provided in a form that is not expected, errors may arise</p>
 
 <p>To enable url rewrite we have to run <code>rewrite_amd64_en-US</code></p>
 <img src="https://i.imgur.com/Z2F3sie.png"  height="25%" width="25%"/>
 
 <h3>Microsoft Visual C++ Redistributable</h3>
-<p>when you creeate an aplication in the c progaming language family it is almost imposible that you dont rely on libraries</p>
+<p>When you create an application in the C programming language family, it is almost impossible that you don't rely on libraries</p>
 <p>libraries can be think of as reusable code, like functions or classes that other people created and that you are reusing in your own aplication, using libraries is really common but it has a downside apps that are build using any specific library will then need that library to run even after the code is compiled into a <code>.exe</code> file</p>
-<p>osTicket is affected by that due to the fact that some components it needs for its correct working really on those libraries</p>
-<p>for instance we need to install said libraries to use:</p>
+<p>osTicket is affected by that because some components it needs for its correct working really depend on those libraries</p>
+<p> For instance, we need to install said libraries to use:</p>
 <code>certain php extentions</code>
 <code>certain iis modules</code>
 <code>image processing functions within osTicket</code>
 <p>the specific libraries we need to install are the <code>Visual C++ Runtime libraries</code> and to install them we need to run <code>VC_redist.x86</code></p>
 
 <h3>Deploying the webapp</h3>
-<p>Now we have everything requiered for the osTicket webapp to run, but how do we actually run it?</p>
+<p>Now we have everything required for the osTicket webapp to run, but how do we actually run it?</p>
 <p>Remember the <code>C:\inetpub\wwwroot</code> folder that i mentioned earlier</p>
-<p>Well if we simply switch those files with the files that define ostciket we can convert our defoult webpage into osTicket</p>
+<p>Well, if we simply switch those files with the files that define ostciket, we can convert our default webpage into osTicket</p>
 
 <br>
 <p>to find the necesarry files we can go to the <code>osTicket files zip</code> and extract its contents</p>
-<p>once the extraction is finished we can just replace the files on the <code>C:\inetpub\wwwroot</code> folder with the files of the upload folder and our default webpage is now osTicket</p>
+<p> Once the extraction is finished, we can just replace the files on the <code>C:\inetpub\wwwroot</code> folder with the files of the upload folder and our default webpage is now osTicket</p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
 
 <h3>Php Extentions</h3>
-
-<h4>troubleshooting</h4>
-some of these extensions may not appear so here are the links to download them
-and we just go and add them
-yeah likely problems with different versions
-thay get copied
-
-|Php extention name   |Php filename   |Download link   |
-|---|---|---|
-|PHP Programing language |https://downloads.php.net/~windows/releases/archives/php-8.5.5-Win32-vs17-x86.zip   |https://www.dllme.com/dll/files/php_intl/50f6c480829993069c42136ba74c6975 |
-|PHP Manager for iis |https://github.com/RonaldCarter/PHPManager/releases/download/V1.5.0/PHPManagerForIIS_V1.5.0.msi   |https://downloads.php.net/~windows/pecl/releases/imap/1.0.3/php_imap-1.0.3-8.5-ts-vs17-x64.zip |
-|URL Rewrite Installer   |https://download.microsoft.com/download/1/2/8/128E2E22-C1B9-44A4-BE2A-5859ED1D4592/rewrite_amd64_en-US.msi   |https://downloads.php.net/~windows/pecl/releases/imap/1.0.3/php_imap-1.0.3-8.4-ts-vs17-x64.zip |
-|https://downloads.php.net/~windows/pecl/releases/imap/1.0.0/php_imap-1.0.0-8.3-ts-vs16-x64.zip   |https://download.visualstudio.microsoft.com/download/pr/40b59c73-1480-4caf-ab5b-4886f176bf71/435A0DE411B991E2BFC7FD1D5439639E7B32206960D3099370E36172018F52FE/VC_redist.x86.exe   |https://downloads.php.net/~windows/pecl/releases/imap/1.0.3/php_imap-1.0.3-8.5-ts-vs17-x64.zip  |
-|osTicket installation files   |https://github.com/osTicket/osTicket/releases/download/v1.18.3/osTicket-v1.18.3.zip   |
