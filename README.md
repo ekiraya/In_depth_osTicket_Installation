@@ -85,7 +85,7 @@
 
 
 <p>Once that's finished, we can use the Windows search bar to look for the IIS Management Console and click it</p> 
-<img src="https://i.imgur.com/82etMyo.png"  height="25%" width="25%"/>
+<img src="https://i.imgur.com/g5TEuHY.png"  height="25%" width="25%"/>
 <p>This will open our IIS management console, and we should see a <code>php manager</code> icon in the main page</p>
 <img src="https://i.imgur.com/82etMyo.png"  height="25%" width="25%"/>
 <p>that is the option we just created by running <code>php manager for iis</code></p>
@@ -94,6 +94,8 @@
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
 <p>And there we must click the register a new PHP version button, and then we browse to the <code>C:\php</code> folder we created a couple of steps before and simply select <code>php-cgi.exe</code> and click open</p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
+
+
 
 <h3>Enable url rewrite</h3>
 <p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
