@@ -87,7 +87,7 @@
 <p>Once that's finished, we can use the Windows search bar to look for the IIS Management Console and click it</p> 
 <img src="https://i.imgur.com/gbsuuQc.png"  height="25%" width="25%"/>
 <p>This will open our IIS management console, and we should see a <code>php manager</code> icon in the main page</p>
-<img src="https://i.imgur.com/HMXHlAd.png"  height="25%" width="25%"/>
+<img src="https://i.imgur.com/PJUlZAY.png"  height="25%" width="25%"/>
 <p>that is the option we just created by running <code>php manager for iis</code></p>
 
 <p>To finally register our new PHP version, we need to click the aforementioned icon to move into this page</p>
