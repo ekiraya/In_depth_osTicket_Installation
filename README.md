@@ -91,7 +91,7 @@
 <p>that is the option we just created by running <code>php manager for iis</code></p>
 
 <p>To finally register our new PHP version, we need to click the aforementioned icon to move into this page</p>
-<img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
+<img src="https://i.imgur.com/zhqiYhu.png"  height="25%" width="25%"/>
 <p>And there we must click the register a new PHP version button, and then we browse to the <code>C:\php</code> folder we created a couple of steps before and simply select <code>php-cgi.exe</code> and click open</p>
 <img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
 
