@@ -99,17 +99,16 @@
 <p>Notice how where it says php executable, it is pointing at our <code>php-cgi.exe</code> route</p>
 
 <p>We still need to install some PHP extensions </p>
-<p>PHP extensions are libraries, and libraries are basically code someone else wrote. PHP libraries are used to expand the functions of PHP so that I can perform operations it could not otherwise</p>
-<p>As most things in this guide, that's probably better explained with an example, so say you write an application in PHP, and you need that application to count to 10, but you dont wanna write that code yourself because it's too complex for you. Well, in that case, you may go online and look for a library to do it for you. And if you are lucky, maybe some guy already wrote code to count to 10 and created a library for it that you can use. And after you find that library, you simply code your project so that every time you need your application to count to 10, it just calls the library to perform the counting for you</p>
-<p>For osTickets, we need to install the following PHP extensions that, for convenience, I have ordered into a table with what the PHP extension does and what its name is </p>
-
+<p>In the following table, I organized all the PHP extensions we need to install and what they actually do</p>
 |PHP extention   |Functionallity it provides   |
 |---|---|
 |php_imap.dll |It's a library that will allow osTicket to use the IMAP protocol, which is a protocol to manage emails   |
 |php_intl.dll |It's a library for Internationalization, it makes the app usable on different languages, supports various scripts, etc.    |
 |php_opcache.dll   |It's a library for improved performance   |
-<p>Returning to our exmple how osTicket work is that instead of having a protocol to manage emailes build yeah whatever</p>
-
+<p>PHP extensions are libraries. That is code someone else wrote, that allow a PHP application, in this case osTicket, to perform actions it was not originally coded to perform</p>
+<p>For instance, osTicket is not capable by default of handling emails. But if we install php_imap.dll, a library that uses the IMAP protocol for managing emails. Every time osTicket needs to manage emails, it just needs to call on php_imap to do the email management work for it</p>
+<p>The same applies to all the other extensions </p>
+  
 <h3>Enable url rewrite</h3>
 <p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
 <p> This is better explained with an example. With URL rewrite, we can, for instance, take the URL <code>http://localhost/article/342/some-article-title</code> and configure rules within our IIS server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
