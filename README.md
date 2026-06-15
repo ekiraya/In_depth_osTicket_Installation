@@ -70,7 +70,7 @@
 <h3>PHP configurartion</h3>
 <p> PHP is a programming language primarily used in webpage development. It is also the language that osTicket is programmed in; thus, we must install it and configure our iis server to use it before we can use osTicket</p>
 
-<p>To install PHP, we first have to extract the <code>php zip</code> which contains all the files necessary for the language to be used</p>
+<p>To install PHP, we first have to extract the <code>php zip</code>, which contains all the files necessary for the language to be used</p>
 <img src="https://i.imgur.com/HHmJDkN.png"  height="25%" width="25%"/>
 
 <p>Then we need to go to <code>C:\</code> and create a folder called php</p>
@@ -97,6 +97,18 @@
 <p>After clicking the open button, we should end up with a page looking somewhat like this</p>
 <img src="https://i.imgur.com/EZ6NS9G.png"  height="25%" width="25%"/>
 <p>Notice how where it says php executable, it is pointing at our <code>php-cgi.exe</code> route</p>
+
+<p>We still need to install some PHP extensions </p>
+<p>PHP extensions are libraries, and libraries are basically code someone else wrote. PHP libraries are used to expand the functions of PHP so that I can perform operations it could not otherwise</p>
+<p>As most things in this guide, that's probably better explained with an example, so say you write an application in PHP, and you need that application to count to 10, but you dont wanna write that code yourself because it's too complex for you. Well, in that case, you may go online and look for a library to do it for you. And if you are lucky, maybe some guy already wrote code to count to 10 and created a library for it that you can use. And after you find that library, you simply code your project so that every time you need your application to count to 10, it just calls the library to perform the counting for you</p>
+<p>For osTickets, we need to install the following PHP extensions that, for convenience, I have ordered into a table with what the PHP extension does and what its name is </p>
+
+|PHP extention   |Functionallity it provides   |
+|---|---|
+|php_imap.dll |It's a library that will allow osTicket to use the IMAP protocol, which is a protocol to manage emails   |
+|php_intl.dll |It's a library for Internationalization, it makes the app usable on different languages, supports various scripts, etc.    |
+|php_opcache.dll   |It's a library for improved performance   |
+<p>Returning to our exmple how osTicket work is that instead of having a protocol to manage emailes build yeah whatever</p>
 
 <h3>Enable url rewrite</h3>
 <p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
