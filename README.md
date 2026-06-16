@@ -99,16 +99,18 @@
 <p>Notice how where it says php executable, it is pointing at our <code>php-cgi.exe</code> route</p>
 
 <p>We still need to install some PHP extensions</p>
-<p>PHP extensions are libraries. That is code someone else wrote, that extends the functions of PHP to meet the needs of apps</p>
+<p>PHP extensions are libraries. That is code someone else wrote, that extends the functionality of PHP to meet the needs of specific apps</p>
 <p>For instance, osTicket, instead of having a built-in email management system, relies on php_imap.dll, a library that uses the IMAP protocol for managing emails. Because of that, every time osTicket needs to manage emails, it will simply call on php_imap to do the email management work for it</p>
-<p>Apps commonly decide to rely on PHP extensions instead of creating a built-in system for the sake of time and efficiency. The downside of using PHP extensions is, of course, that we need to install them previously.</p>
+<p>Apps commonly decide to rely on PHP extensions instead of creating a built-in system for the sake of time and efficiency. The downside of relying on PHP extensions is that they must be installed before the application can use them.</p>
 <p>I organized the PHP extensions we need to install and what they do in the following table</p>
 
-|PHP extention   |Functionallity it provides   |
+|PHP extension   |Functionality it provides   |
 |---|---|
 |php_imap.dll |It's a library that will allow osTicket to use the IMAP protocol, which is a protocol to manage emails   |
 |php_intl.dll |It's a library for Internationalization, it makes the app usable on different languages, supports various scripts, etc.    |
-|php_opcache.dll   |It's a library for improved performance   |
+|php_opcache.dll   |It's a library that runs precompiled PHP scripts in memory and thus increases performance  |
+
+<p>To install them, we go to the same page we were on previously</p>
 
 <h3>Enable url rewrite</h3>
 <p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
