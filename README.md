@@ -98,6 +98,7 @@
 <img src="https://i.imgur.com/EZ6NS9G.png"  height="25%" width="25%"/>
 <p>Notice how where it says php executable, it is pointing at our <code>php-cgi.exe</code> route</p>
 
+<br>
 <p>We still need to install some PHP extensions</p>
 <p>PHP extensions are libraries. That is code someone else wrote, that extends the functionality of PHP to meet the needs of specific apps</p>
 <p>For instance, osTicket, instead of having a built-in email management system, relies on php_imap.dll, a library that uses the IMAP protocol for managing emails. Because of that, every time osTicket needs to manage emails, it will simply call on php_imap to do the email management work for it</p>
@@ -110,7 +111,15 @@
 |php_intl.dll |It's a library for Internationalization, it makes the app usable on different languages, supports various scripts, etc.    |
 |php_opcache.dll   |It's a library that runs precompiled PHP scripts in memory and thus increases performance  |
 
-<p>To install them, we go to the same page we were on previously</p>
+<p>To install them, we go to the same page we were on previously. We click enable or disable an extension, which should take us to this page</p>
+<img src="https://i.imgur.com/6pQWlym.png"  height="25%" width="25%"/>
+<p>And then we copy our PHP extension name to the filter field to make our extension appear, and when it appears, we simply right click it and pick enable</p>
+<img src="https://i.imgur.com/uQKtOgx.png"  height="25%" width="25%"/>
+<p>We repeat that process for the 3 extensions </p>
+<p>Once the 3 of them are enabled, we simply right-click and click back to main page to go back to the main page</p>
+<img src="https://i.imgur.com/NQD1W6t.png"  height="25%" width="25%"/>
+<p>When we are back at the main page, we should observe that under the PHP extensions label, it now says there are 11 extensions enabled instead of 8</p>
+<img src="https://i.imgur.com/0am6muQ.png"  height="25%" width="25%"/>
 
 <h3>Enable url rewrite</h3>
 <p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
