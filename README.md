@@ -98,17 +98,18 @@
 <img src="https://i.imgur.com/EZ6NS9G.png"  height="25%" width="25%"/>
 <p>Notice how where it says php executable, it is pointing at our <code>php-cgi.exe</code> route</p>
 
-<p>We still need to install some PHP extensions </p>
-<p>In the following table, I organized all the PHP extensions we need to install and what they actually do</p>
+<p>We still need to install some PHP extensions</p>
+<p>PHP extensions are libraries. That is code someone else wrote, that extends the functions of PHP to meet the needs of apps</p>
+<p>For instance, osTicket, instead of having a built-in email management system, relies on php_imap.dll, a library that uses the IMAP protocol for managing emails. Because of that, every time osTicket needs to manage emails, it will simply call on php_imap to do the email management work for it</p>
+<p>Apps commonly decide to rely on PHP extensions instead of creating a built-in system for the sake of time and efficiency. The downside of using PHP extensions is, of course, that we need to install them previously.</p>
+<p>I organized the PHP extensions we need to install and what they do in the following table</p>
+
 |PHP extention   |Functionallity it provides   |
 |---|---|
 |php_imap.dll |It's a library that will allow osTicket to use the IMAP protocol, which is a protocol to manage emails   |
 |php_intl.dll |It's a library for Internationalization, it makes the app usable on different languages, supports various scripts, etc.    |
 |php_opcache.dll   |It's a library for improved performance   |
-<p>PHP extensions are libraries. That is code someone else wrote, that allow a PHP application, in this case osTicket, to perform actions it was not originally coded to perform</p>
-<p>For instance, osTicket is not capable by default of handling emails. But if we install php_imap.dll, a library that uses the IMAP protocol for managing emails. Every time osTicket needs to manage emails, it just needs to call on php_imap to do the email management work for it</p>
-<p>The same applies to all the other extensions </p>
-  
+
 <h3>Enable url rewrite</h3>
 <p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
 <p> This is better explained with an example. With URL rewrite, we can, for instance, take the URL <code>http://localhost/article/342/some-article-title</code> and configure rules within our IIS server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
