@@ -164,4 +164,6 @@
 
 <br>
 <p>After we are done doing that, our IIS server should be looking at the files that define osTicket as the source code for our IIS website</p>
-<p>To easily test if this is the case, we can browse to <code>127.0.0.1</code> and see </p>
+<p>To easily test if this is the case, we can browse to <code>127.0.0.1</code>, and we should see something like this</p>
+<img src="https://i.imgur.com/8UT0cHi.png"  height="25%" width="25%"/>
+<p>This is also a great point to do some troubleshooting. If, after you followed this guide, you are not seeing a website like the one shown above, I would recommend going back and reviewing every single step, ensuring you did everything as shown here</p>
