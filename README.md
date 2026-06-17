@@ -133,10 +133,10 @@
 <p>When you create an application in the C programming language family, it is almost impossible that you don't rely on libraries</p>
 <p>libraries can be think of as reusable code, like functions or classes that other people created and that you are reusing in your own aplication, using libraries is really common but it has a downside apps that are build using any specific library will then need that library to run even after the code is compiled into a <code>.exe</code> file</p>
 <p>osTicket is affected by that because some components it needs for its correct working really depend on those libraries</p>
-<p> For instance, we need to install said libraries to use:</p>
-<code>certain php extentions</code>
-<code>certain iis modules</code>
-<code>image processing functions within osTicket</code>
+<p>For instance, we need to install said libraries to use:</p>
+<p><code>certain php extentions</code></p>
+<p><code>certain iis modules</code></p>
+<p><code>image processing functions within osTicket</code></p>
 <p>the specific libraries we need to install are the <code>Visual C++ Runtime libraries</code> and to install them we need to run <code>VC_redist.x86</code></p>
 <img src="https://i.imgur.com/xsiCtXa.png"  height="25%" width="25%"/>
 
