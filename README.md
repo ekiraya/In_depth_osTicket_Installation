@@ -81,7 +81,7 @@
 <p>Then we need to go to <code>C:\</code> and create a folder called php</p>
 <img src="https://i.imgur.com/LFJlr5r.png"  height="25%" width="25%"/>
 <p>and then we have to copy all of the files from the php folder we just extracted into our new <code>C:\php</code> folder. Once we copy the files our <code>C:\php</code> folder should look something like this:</p>
-<img src="https://i.imgur.com/LFJlr5r.png"  height="25%" width="25%"/>
+<img src="https://i.imgur.com/teUqD9R.png"  height="25%" width="25%"/>
 
 <br>
 <p>Now, how IIS works is that whenever our IIS server needs to read PHP files, it will try to look for some executable that it can use to know how to process said files. Due to the simple fact that we already installed all the files necessary to use PHP on our computer, we know for a fact that those files exist. Only that our IIS server doesn't know where to find them, and as such, it is unable to use them. The process of making our IIS server aware of where to find the PHP files is called PHP version registration</p>
