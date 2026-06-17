@@ -116,14 +116,14 @@
 <p>And then we copy our PHP extension name to the filter field to make our extension appear, and when it appears, we simply right click it and pick enable</p>
 <img src="https://i.imgur.com/uQKtOgx.png"  height="25%" width="25%"/>
 <p>We repeat that process for the 3 extensions </p>
-<p>Once the 3 of them are enabled, we simply right-click and click back to main page to go back to the main page</p>
+<p>Once the 3 of them are enabled, we right-click and click back to main page to go back to the main page</p>
 <img src="https://i.imgur.com/NQD1W6t.png"  height="25%" width="25%"/>
 <p>When we are back at the main page, we should observe that under the PHP extensions label, it now says there are 11 extensions enabled instead of 8</p>
 <img src="https://i.imgur.com/0am6muQ.png"  height="25%" width="25%"/>
 
 <h3>Enable url rewrite</h3>
-<p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL </p>
-<p> This is better explained with an example. With URL rewrite, we can, for instance, take the URL <code>http://localhost/article/342/some-article-title</code> and configure rules within our IIS server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
+<p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL</p>
+<p>This is better explained with an example. With URL rewrite, we can, for instance, take the URL <code>http://localhost/article/342/some-article-title</code> and configure rules within our IIS server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
 <p> We need to enable this on our osTicket VM for two reasons. First, osTicket constantly converts URLs, and doing so is essential to its functioning. And secondly, the PHP files mentioned before that osTicket uses to run expect certain specific URLs, and if those URLs are not provided or are provided in a form that is not expected, errors may arise</p>
 
 <p>To enable url rewrite we have to run <code>rewrite_amd64_en-US</code></p>
@@ -138,6 +138,7 @@
 <code>certain iis modules</code>
 <code>image processing functions within osTicket</code>
 <p>the specific libraries we need to install are the <code>Visual C++ Runtime libraries</code> and to install them we need to run <code>VC_redist.x86</code></p>
+<img src="https://i.imgur.com/xsiCtXa.png"  height="25%" width="25%"/>
 
 <h3>Deploying the webapp</h3>
 <p>Now we have everything required for the osTicket webapp to run, but how do we actually run it?</p>
@@ -145,8 +146,14 @@
 <p>Well, if we simply switch those files with the files that define ostciket, we can convert our default webpage into osTicket</p>
 
 <br>
-<p>to find the necesarry files we can go to the <code>osTicket files zip</code> and extract its contents</p>
-<p> Once the extraction is finished, we can just replace the files on the <code>C:\inetpub\wwwroot</code> folder with the files of the upload folder and our default webpage is now osTicket</p>
-<img src="https://i.imgur.com/Rj8P2C3.png"  height="25%" width="25%"/>
+<p>To find the necessary files, we can go to the <code>osTicket files zip</code> and extract its contents by right-clicking and clicking extract all</p>
+<img src="https://i.imgur.com/iX3WcID.png"  height="25%" width="25%"/>
+<p>Afterwards, we go to the folder that we just created when we extracted the osTicket files, and we browse into the upload folder</p>
+<img src="https://i.imgur.com/yL4ppuJ.png"  height="25%" width="25%"/>
+<p>We then need to delete the files on the <code>C:\inetpub\wwwroot</code> folder</p>
+<img src="https://i.imgur.com/QmmSzUt.png"  height="25%" width="25%"/>
+<p>and then we copy the files of the upload folder into it to the <code>C:\inetpub\wwwroot</code> folder</p>
+<img src="https://i.imgur.com/QmmSzUt.png"  height="25%" width="25%"/>
 
-<h3>Php Extentions</h3>
+<br>
+<p>After we are done doing that, our IIS server should be looking at the files that define osTicket as the source code for our IIS website</p>
