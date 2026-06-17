@@ -68,7 +68,7 @@
 <p> Importantly, we can not only observe this code. We can actually modify it to turn our self-hosted webpage into a totally different webpage. And that is exactly what we will be doing to install osTicket</p> 
 
 <h3>PHP configurartion</h3>
-<p> PHP is a programming language primarily used in webpage development. It is also the language that osTicket is programmed in; thus, we must install it and configure our iis server to use it before we can use osTicket</p>
+<p> PHP is a programming language primarily used in webpage development. It is also the language that osTicket is programmed in; thus, we must install it and configure our IIS server to use it before we can use osTicket</p>
 
 <p>To install PHP, we first have to extract the <code>php zip</code>, which contains all the files necessary for the language to be used</p>
 <img src="https://i.imgur.com/HHmJDkN.png"  height="25%" width="25%"/>
@@ -116,7 +116,7 @@
 <p>And then we copy our PHP extension name to the filter field to make our extension appear, and when it appears, we simply right click it and pick enable</p>
 <img src="https://i.imgur.com/uQKtOgx.png"  height="25%" width="25%"/>
 <p>We repeat that process for the 3 extensions </p>
-<p>Once the 3 of them are enabled, we right-click and click back to main page to go back to the main page</p>
+<p>Once the 3 of them are enabled, we right-click and click back to the main page to go back to the main page</p>
 <img src="https://i.imgur.com/NQD1W6t.png"  height="25%" width="25%"/>
 <p>When we are back at the main page, we should observe that under the PHP extensions label, it now says there are 11 extensions enabled instead of 8</p>
 <img src="https://i.imgur.com/0am6muQ.png"  height="25%" width="25%"/>
@@ -153,7 +153,10 @@
 <p>We then need to delete the files on the <code>C:\inetpub\wwwroot</code> folder</p>
 <img src="https://i.imgur.com/QmmSzUt.png"  height="25%" width="25%"/>
 <p>and then we copy the files of the upload folder into it to the <code>C:\inetpub\wwwroot</code> folder</p>
-<img src="https://i.imgur.com/QmmSzUt.png"  height="25%" width="25%"/>
+<img src="https://i.imgur.com/zg4vlLL.png"  height="25%" width="25%"/>
+<p>After doing all of that to ensure our configurations were made effective, we need to go back to the IIS Manager and click the restart button under the manage server label to restart our IIS server</p>
+<img src="https://i.imgur.com/mT0yYF2.png"  height="25%" width="25%"/>
 
 <br>
 <p>After we are done doing that, our IIS server should be looking at the files that define osTicket as the source code for our IIS website</p>
+<p>To easily test if this is the case, we can browse to <code>127.0.0.1</code> and see </p>
