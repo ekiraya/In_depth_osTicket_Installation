@@ -20,6 +20,11 @@
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 - Download the necessary installation files
+- Installing IIS
+- PHP configuration
+- Enable URL rewrite
+- Microsoft Visual C++ Redistributable
+- Deploying the webapp
 
 <h2>Installation process</h2>
 
@@ -42,7 +47,7 @@
 <p>You should go requirement by requirement, clicking the links on the table to download it. After you are done, you should have the following files in your download folder.</p>
 <img src="https://i.imgur.com/FviBLIz.png"  height="35%" width="35%"/>
 
-<h3>Installing iis</h3>
+<h3>Installing IIS</h3>
 <p>To start installing osTicket, first, we have to install IIS. </p>
 <p>Think about a webpage. For a webpage to run, there needs to be a server somewhere that hosts it. We can think of a server pretty much just as someone else's computer.</p>
 <p>With the help of IIS, we can give our VM the capacity to act like a server, that is, to run webpages within itself.</p>
@@ -67,7 +72,7 @@
 <img src="https://i.imgur.com/oCKY3Gx.png"  height="35%" width="35%"/>
 <p> Importantly, we can not only observe this code. We can actually modify it to turn our self-hosted webpage into a totally different webpage. And that is exactly what we will be doing to install osTicket</p> 
 
-<h3>PHP configurartion</h3>
+<h3>PHP configuration</h3>
 <p> PHP is a programming language primarily used in webpage development. It is also the language that osTicket is programmed in; thus, we must install it and configure our IIS server to use it before we can use osTicket</p>
 
 <p>To install PHP, we first have to extract the <code>php zip</code>, which contains all the files necessary for the language to be used</p>
@@ -121,7 +126,7 @@
 <p>When we are back at the main page, we should observe that under the PHP extensions label, it now says there are 11 extensions enabled instead of 8</p>
 <img src="https://i.imgur.com/0am6muQ.png"  height="25%" width="25%"/>
 
-<h3>Enable url rewrite</h3>
+<h3>Enable URL rewrite</h3>
 <p>URL rewrite allows the user, or in this case, osTicket, to configure rules to map any given URL to any other URL</p>
 <p>This is better explained with an example. With URL rewrite, we can, for instance, take the URL <code>http://localhost/article/342/some-article-title</code> and configure rules within our IIS server to turn it into <code>http://localhost/article.aspx?id=342&title=some-article-title</code></p>
 <p> We need to enable this on our osTicket VM for two reasons. First, osTicket constantly converts URLs, and doing so is essential to its functioning. And secondly, the PHP files mentioned before that osTicket uses to run expect certain specific URLs, and if those URLs are not provided or are provided in a form that is not expected, errors may arise</p>
