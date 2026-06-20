@@ -170,7 +170,5 @@
 
 <h3>SQL database</h3>
 <p>SQL stands for structured query language, which is a programming language used to manipulate data on databases</p>
-<p>MySQL is an SQL database and database management system</p>
-<p>To use it we need install the MySQL server, also called mysqld, which manages access to the data directory, which is where our databases and tables will actually exist it will also install and initialize the grant table, which is where our accounts and specifically our root account, will exist.</p>
-<p>And afterwards it is going to install and open the MySQL configuration that we need to use to configure the server we just created and to configure the root account</p>
-<p>Thats a lot so its probably best to walk you through the actual installation to make those concepts clearer</p>
+<p>MySQL is an SQL-based database and database management system</p>
+<p></p>
