@@ -171,4 +171,27 @@
 <h3>SQL database</h3>
 <p>SQL stands for structured query language, which is a programming language used to manipulate data on databases</p>
 <p>MySQL is an SQL-based database and database management system</p>
-<p></p>
+<p>HeidiSQL is a client for SQL databases like MySQL</p>
+<p>osTicket is an application that will manage and store a lot of data, namely tickets; ticket info, such as when a ticket was created; users' usernames and passwords; etc. We need to create a database where osTicket can store that info, and we will do that by using MySQL and HeidiSQL</p>
+
+<br>
+<p>To start the installation, first we run the MySQL installer</p>
+<img src="https://i.imgur.com/Fmpc1PW.png"  height="25%" width="25%"/>
+<p> We continue the installation by just clicking next until we get to this page</p>
+<img src="https://i.imgur.com/OTMiDas.png"  height="25%" width="25%"/>
+<p>We are just going to need the most common features, so we click typical, and then we click install when it gives us the option</p>
+<p>After the installation is finished, this window should pop up. We ensure the checkbox for the MySQL configuration wizard is checked, and then we click finish</p>
+<img src="https://i.imgur.com/sSceHBZ.png"  height="25%" width="25%"/>
+
+<br>
+<p>Now, before we continue, it's a good idea to talk about what the MySQL installer actually installed. I compiled that info in the following table</p>
+
+|PHP extension   |Functionality it provides   |
+|---|---|
+|php_imap.dll |It's a library that will allow osTicket to use the IMAP protocol, which is a protocol to manage emails   |
+|php_intl.dll |It's a library for Internationalization, it makes the app usable on different languages, supports various scripts, etc.    |
+|php_opcache.dll   |It's a library that runs precompiled PHP scripts in memory and thus increases performance  |
+<p>First of all, it installed the MySQL server or mysqld, which is a server that manages access to the data directory</p>
+<p>It also initialized the MySQL data directory, which is where the databases and tables are located</p>
+<p> Initialized the grant tables, which are where the user accounts and the data about the privileges held by every one of them are stored. This is important because, depending on the account and the privileges it has, it can or can not do stuff like creating, modifying, moving, or otherwise modifying databases. The user accounts for the MySQL way to determine which user can access what</p>
+<p>It also created the root account, which is the account that has all the privileges (create, edit, drop, select databases and tables within those databases)</p>
