@@ -174,7 +174,7 @@
 <p>HeidiSQL is a client for SQL databases like MySQL</p>
 <p>osTicket is an application that will manage and store a lot of data, namely tickets; ticket info, such as when a ticket was created; users' usernames and passwords; etc. We need to create a database where osTicket can store that info, and we will do that by using MySQL and HeidiSQL</p>
 
-<br>
+<h4>MySQL and related</h4>
 <p>To start the installation, first we run the MySQL installer</p>
 <img src="https://i.imgur.com/Fmpc1PW.png"  height="25%" width="25%"/>
 <p> We continue the installation by just clicking next until we get to this page</p>
@@ -202,7 +202,12 @@
 <p>A Windows service is a program that operates in the background and starts and stops automatically when Windows starts and stops, respectively. We want that behaviour for our database, so we pick that option and check the box to launch the MySQL server automatically</p>
 <img src="https://i.imgur.com/q2u9vLJ.png"  height="25%" width="25%"/>
 <p>And then we click next</p>
-<p>Remember when I mentioned the root account and mentioned that it had all the privileges? Well, the MySQL installer created that account, but it still lacks a password. Pick a strong password for it, and also make sure to remember that password because we are going to use it in the following steps. Once you decide on a password enter it in the labeled field, and click next</p>
+<p>Remember when I mentioned the root account and mentioned that it had all the privileges? Well, the MySQL installer created that account, but it still lacks a password. Pick a strong password for it, and also make sure to remember that password because we are going to use it in the following steps. Once you decide on a password, enter it in the labeled field, and click next</p>
 <img src="https://i.imgur.com/q4KV7NA.png"  height="25%" width="25%"/>
-<p>We should get to this page, in which we just click execute</p>
+<p>We should get to this page, in which we just click execute. And when it finishes, we click finish</p>
 <img src="https://i.imgur.com/8yi9ZTy.png"  height="25%" width="25%"/>
+
+<h4>HeidiSQL and related</h4>
+<p>MySQL has at its core, as explained above, the MySQL server. A server is a program that runs continuously, waiting to receive requests from a client program</p>
+<p>A client is a program that sends requests to a server. HeidiSQL is a client program</p>
+<p>Even though there are already some databases and tables created on our MySQL server, we need to create one specifically for osTicket. We will achieve that by sending a request to create it on the server using HeidiSQL</p>
