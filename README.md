@@ -190,6 +190,19 @@
 |---|---|
 |Installed the MySQL server or mysqld |it is a server that manages access to the data directory   |
 |Initialized the MySQL data directory |is where the databases and tables are located    |
-|Initialized the grant tables   |User accounts are the way MySQL uses to determine which user can do what (create, edit, drop, select databases and tables within those databases). That info the user accounts and the privileges held by them is stored in the grant tables   |
+|Initialized the grant tables   |User accounts are the way MySQL uses to determine which user can do what (create, edit, drop, select databases and tables within those databases). That info on the user accounts and the privileges held by them is stored in the grant tables   |
 |Created the root account | The root account is the account that has all the privileges and can basically do anything in MySQL   |
-|install other related MySQL items | The installer also installed other related items, but they are not relevant for the purposes of this guide   |
+|install other related MySQL items | The installer also installed other related items, but they are not relevant for this guide   |
+
+<br>
+<p>Back to the installation, this is the MySQL configuration wizard. It was launched because we clicked the aforementioned option</p>
+<img src="https://i.imgur.com/0XHyqE3.png"  height="25%" width="25%"/>
+<p>To continue the installation, we click next, we pick the standard configuration option, and click next again</p>
+<img src="https://i.imgur.com/MVYYZli.png"  height="25%" width="25%"/>
+<p>A Windows service is a program that operates in the background and starts and stops automatically when Windows starts and stops, respectively. We want that behaviour for our database, so we pick that option and check the box to launch the MySQL server automatically</p>
+<img src="https://i.imgur.com/q2u9vLJ.png"  height="25%" width="25%"/>
+<p>And then we click next</p>
+<p>Remember when I mentioned the root account and mentioned that it had all the privileges? Well, the MySQL installer created that account, but it still lacks a password. Pick a strong password for it, and also make sure to remember that password because we are going to use it in the following steps. Once you decide on a password enter it in the labeled field, and click next</p>
+<img src="https://i.imgur.com/q4KV7NA.png"  height="25%" width="25%"/>
+<p>We should get to this page, in which we just click execute</p>
+<img src="https://i.imgur.com/8yi9ZTy.png"  height="25%" width="25%"/>
