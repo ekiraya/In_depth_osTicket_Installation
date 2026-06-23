@@ -186,12 +186,10 @@
 <br>
 <p>Now, before we continue, it's a good idea to talk about what the MySQL installer actually installed. I compiled that info in the following table</p>
 
-|PHP extension   |Functionality it provides   |
+|Item installed   |explanation   |
 |---|---|
-|php_imap.dll |It's a library that will allow osTicket to use the IMAP protocol, which is a protocol to manage emails   |
-|php_intl.dll |It's a library for Internationalization, it makes the app usable on different languages, supports various scripts, etc.    |
-|php_opcache.dll   |It's a library that runs precompiled PHP scripts in memory and thus increases performance  |
-<p>First of all, it installed the MySQL server or mysqld, which is a server that manages access to the data directory</p>
-<p>It also initialized the MySQL data directory, which is where the databases and tables are located</p>
-<p> Initialized the grant tables, which are where the user accounts and the data about the privileges held by every one of them are stored. This is important because, depending on the account and the privileges it has, it can or can not do stuff like creating, modifying, moving, or otherwise modifying databases. The user accounts for the MySQL way to determine which user can access what</p>
-<p>It also created the root account, which is the account that has all the privileges (create, edit, drop, select databases and tables within those databases)</p>
+|Installed the MySQL server or mysqld |it is a server that manages access to the data directory   |
+|Initialized the MySQL data directory |is where the databases and tables are located    |
+|Initialized the grant tables   |User accounts are the way MySQL uses to determine which user can do what (create, edit, drop, select databases and tables within those databases). That info the user accounts and the privileges held by them is stored in the grant tables   |
+|Created the root account | The root account is the account that has all the privileges and can basically do anything in MySQL   |
+|install other related MySQL items | The installer also installed other related items, but they are not relevant for the purposes of this guide   |
