@@ -243,10 +243,11 @@
 <p>Then, something like this should show up</p>
 <img src="https://i.imgur.com/XJAKkKS.png"  height="25%" width="25%"/>
 <p>Here we can finally create a database for osTicket</p>
-<p>To create it, we simply right click chose the create new option, and select database</p>
+<p>To create it, we right-click, choose the create new option, and select database</p>
 <img src="https://i.imgur.com/GBGzISm.png"  height="25%" width="25%"/>
 <p>This should prompt us to name our database</p>
 <img src="https://i.imgur.com/MEdMpLJ.png"  height="25%" width="25%"/>
 <p>We pick any name we want. We only need to ensure it's a name we can remember. And we click ok</p>
 <img src="https://i.imgur.com/RGPHhdI.png"  height="25%" width="25%"/>
-<h3>SQL database</h3>
+<h3>Configure osTicket files</h3>
+<h3>Full deploy the web app</h3>
