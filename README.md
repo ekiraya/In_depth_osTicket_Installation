@@ -211,3 +211,42 @@
 <p>MySQL has at its core, as explained above, the MySQL server. A server is a program that runs continuously, waiting to receive requests from a client program</p>
 <p>A client is a program that sends requests to a server. HeidiSQL is a client program</p>
 <p>Even though there are already some databases and tables created on our MySQL server, we need to create one specifically for osTicket. We will achieve that by sending a request to create it on the server using HeidiSQL</p>
+
+<br>
+<p>To achieve that, we first need to install HeidiSQL</p>
+<p>We can install it by simply running the installer</p>
+<img src="https://i.imgur.com/ezfyEVN.png"  height="25%" width="25%"/>
+<p>Once this pop-up shows up, we just accept the terms and conditions, and we click next</p>
+<img src="https://i.imgur.com/cDcw5rq.png"  height="25%" width="25%"/>
+<p>And we just keep clicking next until HeidiSQL gets installed</p>
+<p>Once HeidiSQL is installed, this page should show up. We make sure the launch HediSQL checkbox is checked, and we click next</p>
+<img src="https://i.imgur.com/iTJKzyL.png"  height="25%" width="25%"/>
+<p>That's pretty much it for the installation of the software</p>
+
+<br>
+<p>Once HeidiSQL is fully installed, we open it manually or wait until it opens in the case we checked the Launch HeidiSQL checkbox</p>
+<p>When the program opens, a page like this will likely show up. We just click skip</p>
+<img src="https://i.imgur.com/eRZRvIB.png"  height="25%" width="25%"/>
+<p>And a page that looks similar to this should appear</p>
+<img src="https://i.imgur.com/kp15lzw.png"  height="25%" width="25%"/>
+
+<br>
+<p>As stated above, HeidiSQL is simply a client; it just sends requests to a server. Due to that simple fact, HeidiSQL always needs a server to connect to. For our tutorial, we want to send the requests to mysqld, so we need to connect to it first.</p>
+<p>To create a new connection, we simply click the plus button at the bottom of the page</p>
+<img src="https://i.imgur.com/6PJZnYH.png"  height="25%" width="25%"/>
+<p>Before we move on its worth mentioning that a client can only send requests based on the specific account its using</p>
+<p>For instance, if the client is sending requests under a user who has only the read privileges, it will only be able to send read requests</p>
+<p>To make things easier, I would recommend just logging in as the root user</p>
+<p>To log in to HeidiSQL as root, we simply type root in the user field, and we type the password for our root account in the password field. This is why I mentioned earlier that you should remember your root user password </p>
+<img src="https://i.imgur.com/vszTp7A.png"  height="25%" width="25%"/>
+<p>After entering our password and user, we simply click open</p>
+<p>Then, something like this should show up</p>
+<img src="https://i.imgur.com/XJAKkKS.png"  height="25%" width="25%"/>
+<p>Here we can finally create a database for osTicket</p>
+<p>To create it, we simply right click chose the create new option, and select database</p>
+<img src="https://i.imgur.com/GBGzISm.png"  height="25%" width="25%"/>
+<p>This should prompt us to name our database</p>
+<img src="https://i.imgur.com/MEdMpLJ.png"  height="25%" width="25%"/>
+<p>We pick any name we want. We only need to ensure it's a name we can remember. And we click ok</p>
+<img src="https://i.imgur.com/RGPHhdI.png"  height="25%" width="25%"/>
+<h3>SQL database</h3>
