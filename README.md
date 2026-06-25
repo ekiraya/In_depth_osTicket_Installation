@@ -249,5 +249,30 @@
 <img src="https://i.imgur.com/MEdMpLJ.png"  height="25%" width="25%"/>
 <p>We pick any name we want. We only need to ensure it's a name we can remember. And we click ok</p>
 <img src="https://i.imgur.com/RGPHhdI.png"  height="25%" width="25%"/>
-<h3>Configure osTicket files</h3>
-<h3>Full deploy the web app</h3>
+<h3>Configure osTicket configuarion file</h3>
+<p>Now, as you may have noticed already, to install osTicket, a lot of the steps have to be done manually. But fortunately not all of them.</p>
+<p>ost-config.php is basically a file that contains code that we can run to make a lot of important configurations like creating admin login information tables in our MySQL database, defining some important security mechanisms, etc. </p>
+<p>Now we are not going to execute it manually; it is the osTicket webpage that's going to execute it to finalize the installation. Nevertheless, to allow osTicket to use this file, we need to make some important changes</p>
+
+<br>
+<p>First of all, ost-config.php doesn't exist just yet. We have to create it from a template. To find that template, we need to go to <code>C:\inetpub\wwwroot\include</code>, and we need to look for <code>ost-sampleconfig</code></p>
+<img src="https://i.imgur.com/krPH3i0.png"  height="25%" width="25%"/>
+<p><code>ost-sampleconfig</code> contains the same code as ost-config.php; nevertheless, osTicket will try to find a file called ost-config.php to execute it, so if you don't rename it appropriately, osTicket will simply not be able to find it</p>
+<p>To rename <code>ost-sampleconfig</code> we right click and click the rename option</p>
+<img src="https://i.imgur.com/sYvRInE.png"  height="25%" width="25%"/>
+<p>And then we simply change the file name to ost-config.php</p>
+<img src="https://i.imgur.com/I8COeWF.png"  height="25%" width="25%"/>
+<p>It must be expelled exactly like that because, as stated above, if we spell it in another way, it is likely that osTicket won't be able to find the file</p>
+<p>After doing that configuration osTicket will be able to find the file, but due to permissions, it may not be able to work with it</p>
+<p>To solve that, we need to right-click ost-config.php and click the propierties option</p>
+<img src="https://i.imgur.com/m1MaGs8.png"  height="25%" width="25%"/>
+<p>After that, a page like this should appear</p>
+<img src="https://i.imgur.com/4aZC8Hj.png"  height="25%" width="25%"/>
+<p>We need to go to the security tab and click the edit button</p>
+<img src="https://i.imgur.com/TigjOok.png"  height="25%" width="25%"/>
+<p>Then a page like this should pop up</p>
+<img src="https://i.imgur.com/VBluFMJ.png"  height="25%" width="25%"/>
+<p>In the permissions for ost-config.php page, we should click the add option, and in the window that shows up, we need to enter "everyone"</p>
+<img src="https://i.imgur.com/ld9MhQ1.png"  height="25%" width="25%"/>
+
+<h3>Fully deploy the web app</h3>
