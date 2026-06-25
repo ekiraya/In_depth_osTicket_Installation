@@ -263,7 +263,7 @@
 <p>And then we simply change the file name to ost-config.php</p>
 <img src="https://i.imgur.com/I8COeWF.png"  height="25%" width="25%"/>
 <p>It must be expelled exactly like that because, as stated above, if we spell it in another way, it is likely that osTicket won't be able to find the file</p>
-<p>After doing that configuration osTicket will be able to find the file, but due to permissions, it may not be able to work with it</p>
+<p>After doing that, osTicket will be able to find the file, but due to permissions, it may not be able to work with it</p>
 <p>To solve that, we need to right-click ost-config.php and click the propierties option</p>
 <img src="https://i.imgur.com/m1MaGs8.png"  height="25%" width="25%"/>
 <p>After that, a page like this should appear</p>
@@ -274,5 +274,7 @@
 <img src="https://i.imgur.com/VBluFMJ.png"  height="25%" width="25%"/>
 <p>In the permissions for ost-config.php page, we should click the add option, and in the window that shows up, we need to enter "everyone"</p>
 <img src="https://i.imgur.com/ld9MhQ1.png"  height="25%" width="25%"/>
+<p>Next, in the same window, we need to click the check names option and then click okay</p>
+<img src="https://i.imgur.com/9NcLMyW.png"  height="25%" width="25%"/>
 
 <h3>Fully deploy the web app</h3>
