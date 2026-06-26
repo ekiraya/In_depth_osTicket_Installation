@@ -311,3 +311,9 @@
 <p>Finally, after filling up all that info, we can click <code>Install Now</code>, and if you are wondering when we do that, the osTicket webapp will send all the info we just filled in to ost-config.php and then run the code in the file to create a series of tables in the database we defined, create our admin account in that table and make some other configurations defined on the file</p>
 <p>If everything went smoothly, we should end up on a page that looks like this</p>
 <img src="https://i.imgur.com/aKfkTeL.png"  height="25%" width="25%"/>
+
+<br>
+<p>If we go to 127.0.0.1 now, we should find this webpage, and we can observe that, as I explained above, the name on the browser tab is the one we specified in the system settings during the installation.</p>
+<img src="https://i.imgur.com/OgtLRAK.png"  height="25%" width="25%"/>
+
+<h3>SQL database</h3>
