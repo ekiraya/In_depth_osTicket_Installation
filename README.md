@@ -342,3 +342,9 @@
 <p>We select each item in the permission entries field and click remove except for everyone, system, administrators, users, IIS, and trusted installer</p>
 <p>We should end up somewhat like this</p>
 <img src="https://i.imgur.com/jYTsvvK.png"  height="25%" width="25%"/>
+<p>Then we select everyone, and we click the edit button</p>
+<p>And a page that looks like this should appear</p>
+<img src="https://i.imgur.com/iJZwIle.png"  height="25%" width="25%"/>
+<p>We uncheck every box except for the read one. The window should end up looking like this.</p>
+<img src="https://i.imgur.com/VMYsl9I.png"  height="25%" width="25%"/>
+<p>We then simply click ok and apply until all windows disappear </p>
