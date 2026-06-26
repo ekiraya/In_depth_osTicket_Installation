@@ -1,4 +1,4 @@
-<p align="center">
+<img width="1023" height="492" alt="mstsc_LwrBCPnH7m" src="https://github.com/user-attachments/assets/766db235-7a40-4372-ad06-a35cb93064b4" /><p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
@@ -307,3 +307,7 @@
 <p>MySQL database is the database osTicket will be using to store info. We want to enter the name of the database we created a couple of steps before.</p>
 <p>The MySQL username and password correspond to the MySQL account that osTicket will make modifications under. We want to use the root account simply because, as stated above, it has all the permissions. And to avoid any errors that a lack of permissions may cause with osTicket functionalities, we want to use that account</p>
 <img src="https://i.imgur.com/miUcWYZ.png"  height="25%" width="25%"/>
+
+<p>Finally, after filling up all that info, we can click <code>Install Now</code>, and if you are wondering when we do that, the osTicket webapp will send all the info we just filled in to ost-config.php and then run the code in the file to create a series of tables in the database we defined, create our admin account in that table and make some other configurations defined on the file</p>
+<p>If everything went smoothly, we should end up on a page that looks like this</p>
+<img src="https://i.imgur.com/aKfkTeL.png"  height="25%" width="25%"/>
