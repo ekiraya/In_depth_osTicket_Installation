@@ -294,10 +294,16 @@
 
 <br>
 <p>Then we need to fill in the info for the admin user. The admin user is the most powerful account in osTicket. It can literally modify anything within the system.</p>
-<p>We can enter whatever name and lastname we want. I will be using Joe and Johnson respectively</p>
+<p>We can enter whatever name and last name we want. I will be using Joe and Johnson respectively</p>
 <p>We also need to add the email address of the admin. I will be using admin.joe@gmail.com</p>
 <p>Then we need to add a username which will be the name osTicket will use to identify our account. I will be using joe_admin</p>
 <p>And lastly, we need to add a password. Given the importance of the admin account, make sure to create a strong password</p>
 <img src="https://i.imgur.com/cN2hHBP.png"  height="25%" width="25%"/>
 
 <br>
+<p>Then we need to fill in our database settings</p> 
+<p>The MySQL table prefix is a prefix that will be placed before the tables osTicket will create in our database. I recommend not changing this</p>
+<p>MySQL hostname. Is another setting we should not change</p>
+<p>MySQL database is the database osTicket will be using to store info. We want to enter the name of the database we created a couple of steps before.</p>
+<p>The MySQL username and password correspond to the MySQL account that osTicket will make modifications under. We want to use the root account simply because, as stated above, it has all the permissions. And to avoid any errors that a lack of permissions may cause with osTicket functionalities, we want to use that account</p>
+<img src="https://i.imgur.com/miUcWYZ.png"  height="25%" width="25%"/>
