@@ -276,5 +276,11 @@
 <img src="https://i.imgur.com/ld9MhQ1.png"  height="25%" width="25%"/>
 <p>Next, in the same window, we need to click the check names option and then click okay</p>
 <img src="https://i.imgur.com/9NcLMyW.png"  height="25%" width="25%"/>
+<p>It is recommended always to click the check names option because if we don't spell everyone exactly like this, our configuration will not be made effective</p>
+<p>Now, in our group or username list, everyone should be listed, which allows us to change the permissions for everyone</p>
+<p>We need to set the permissions of everyone to full control so that osTicket can work with the file without problems</p>
+<p>To do that, we simply click everyone and then in permissions for everyone we check the full control box</p>
+<img src="https://i.imgur.com/cUqiXNQ.png"  height="25%" width="25%"/>
+<p>Afterwards, we click apply and ok in both windows until they disappear</p>
 
 <h3>Fully deploy the web app</h3>
