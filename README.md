@@ -317,6 +317,7 @@
 <img src="https://i.imgur.com/OgtLRAK.png"  height="25%" width="25%"/>
 
 <h3>Clean up</h3>
+<h4>Set up folder</h4>
 <p>We still need to do some cleanup for security reasons</p>
 <p>If we actually look closely at the page that showed up when we finished installing osTicket, we will see that it has the <code>http://127.0.0.1/setup/install.php</code> address.</p>
 <img src="https://i.imgur.com/COU0jN3.png"  height="25%" width="25%"/>
@@ -327,3 +328,17 @@
 <br>
 <p>To delete the folder, we browse to <code>C:\inetpub\wwwroot</code> and then we simply right click the folder and click delete</p>
 <img src="https://i.imgur.com/UaJ1guw.png"  height="25%" width="25%"/>
+
+<h4>Configuration file</h4>
+<p>ost-config.php, as explained above, is really important. If a malicious actor could access it, he could use it to redefine some important security measures and access sensitive information.</p>
+<p>To prevent that its a good idea to set the permissions of the file to read only</p>
+
+<br>
+<p>To achive that we browse so <code>C:\inetpub\wwwroot\include</code> select the file and right click and click propierties</p>
+<img src="https://i.imgur.com/2r4ASR7.png"  height="25%" width="25%"/>
+<p>Go to security and click advanced</p>
+<p>A window like this one should pop up</p>
+<img src="https://i.imgur.com/l3i4K5V.png"  height="25%" width="25%"/>
+<p>We select each item in the permission entries field and click remove except for everyone, system, administrators, users, IIS, and trusted installer</p>
+<p>We should end up somewhat like this</p>
+<img src="https://i.imgur.com/jYTsvvK.png"  height="25%" width="25%"/>
