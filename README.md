@@ -284,3 +284,20 @@
 <p>Afterwards, we click apply and ok in both windows until they disappear</p>
 
 <h3>Fully deploy the web app</h3>
+<p>Now we should browse back to 127.0.0.1</p>
+<img src="https://i.imgur.com/MpxkRX2.png"  height="25%" width="25%"/>
+<p>And click continue. If the configuration was done properly, a page like this should appear</p>
+<img src="https://i.imgur.com/0cydkSb.png"  height="25%" width="25%"/>
+<p>We need to enter the name of the company/service we are going to use osTicket for in the helpdesk name field. In my case, I will enter "lab". This is also the name that will appear in the tab when we are done installing osTicket</p>
+<p>In the default email section, we need to add the company email. This is the account osTicket will send important notifications to. In my case, I will enter a fake email "support.labs@gmail.com"</p>
+<img src="https://i.imgur.com/TobZV3z.png"  height="25%" width="25%"/>
+
+<br>
+<p>Then we need to fill in the info for the admin user. The admin user is the most powerful account in osTicket. It can literally modify anything within the system.</p>
+<p>We can enter whatever name and lastname we want. I will be using Joe and Johnson respectively</p>
+<p>We also need to add the email address of the admin. I will be using admin.joe@gmail.com</p>
+<p>Then we need to add a username which will be the name osTicket will use to identify our account. I will be using joe_admin</p>
+<p>And lastly, we need to add a password. Given the importance of the admin account, make sure to create a strong password</p>
+<img src="https://i.imgur.com/cN2hHBP.png"  height="25%" width="25%"/>
+
+<br>
