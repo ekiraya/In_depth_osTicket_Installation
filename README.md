@@ -316,4 +316,14 @@
 <p>If we go to 127.0.0.1 now, we should find this webpage, and we can observe that, as I explained above, the name on the browser tab is the one we specified in the system settings during the installation.</p>
 <img src="https://i.imgur.com/OgtLRAK.png"  height="25%" width="25%"/>
 
-<h3>SQL database</h3>
+<h3>Clean up</h3>
+<p>We still need to do some cleanup for security reasons</p>
+<p>If we actually look closely at the page that showed up when we finished installing osTicket, we will see that it has the <code>http://127.0.0.1/setup/install.php</code> address.</p>
+<img src="https://i.imgur.com/COU0jN3.png"  height="25%" width="25%"/>
+<p>This is because the webpage is looking at the install.php file in the <code>C:\inetpub\wwwroot\setup</code> folder.</p>
+<p>That folder contains a lot of important files necessary for the installation of osTicket, including install.php. The problem is that if we leave those files just lying around, someone could use them to reinstall osTicket with other settings that could allow them to access ticketing info and information about the users within the ticketing system</p>
+<p>To prevent that, we need to delete the <code>C:\inetpub\wwwroot\setup</code> folder.</p>
+
+<br>
+<p>To delete the folder, we browse to <code>C:\inetpub\wwwroot</code> and then we simply right click the folder and click delete</p>
+<img src="https://i.imgur.com/UaJ1guw.png"  height="25%" width="25%"/>
