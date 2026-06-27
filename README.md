@@ -1,7 +1,7 @@
 <p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
-<h1>osTicket installation</h1>
+<h1>osTicket in depth installation</h1>
 
 <h2>Description</h2>
 <p>This tutorial and/or guide outlines the prerequisites and installation of an open-source help desk ticketing system, namely osTicket.</p>
@@ -13,19 +13,23 @@
 
 <h2>Enviroments used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines/Computers)
 
 <h2>Services used</h2>
 
 - Remote Desktop
 - Internet Information Services (IIS)
+- URL rewrite
+- Microsoft Visual C++ Redistributable
+- MySQL
+- HeidiSQL
 - osTicket
 
 <h2>List of Prerequisites</h2>
 
 - To have a VM or physical computer where you want to install osTicket
 
-<h2>High-Level Deployment and Configuration Steps</h2>
+<h2>Index</h2>
 
 - [Download the necessary installation files](https://github.com/ekiraya/In_depth_osTicket_Installation#download-the-necessary-installation-files)
 - [Installing IIS](https://github.com/ekiraya/In_depth_osTicket_Installation#installing-iis)
