@@ -27,16 +27,16 @@
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Download the necessary installation files
-- Installing IIS
-- PHP configuration
-- Enable URL rewrite
-- Microsoft Visual C++ Redistributable
-- Deploying the webapp
-- SQL database configuration
-- osTicket configuration file configuration
-- Fully deploy the web app
-- Clean up
+- [Download the necessary installation files](https://github.com/ekiraya/In_depth_osTicket_Installation#download-the-necessary-installation-files)
+- [Installing IIS](https://github.com/ekiraya/In_depth_osTicket_Installation#installing-iis)
+- [PHP configuration](https://github.com/ekiraya/In_depth_osTicket_Installation#php-configuration)
+- [Enable URL rewrite](https://github.com/ekiraya/In_depth_osTicket_Installation#enable-url-rewrite)
+- [Microsoft Visual C++ Redistributable](https://github.com/ekiraya/In_depth_osTicket_Installation#microsoft-visual-c-redistributable)
+- [Deploying the webapp](https://github.com/ekiraya/In_depth_osTicket_Installation#deploying-the-webapp)
+- [SQL database configuration](https://github.com/ekiraya/In_depth_osTicket_Installation#sql-database-configuaration)
+- [osTicket configuration file configuration](https://github.com/ekiraya/In_depth_osTicket_Installation#osticket-configuration-file-configuration)
+- [Fully deploy the web app](https://github.com/ekiraya/In_depth_osTicket_Installation#fully-deploy-the-web-app)
+- [Clean up](https://github.com/ekiraya/In_depth_osTicket_Installation#clean-up)
 
 <h2>Installation process</h2>
 
