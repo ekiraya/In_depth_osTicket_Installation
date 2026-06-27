@@ -1,14 +1,22 @@
 <p align="center">
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
-
 <h1>osTicket installation</h1>
-<p>This tutorial outlines the prerequisites and installation of an open-source help desk ticketing system, namely osTicket.</p>
+
+<h2>Description</h2>
+<p>This tutorial and/or guide outlines the prerequisites and installation of an open-source help desk ticketing system, namely osTicket.</p>
 <p>It also contains a simple explanation of what each component is and why it is necessary to install it for osTicket to function correctly.</p>
 
-<h2>Environments and Technologies Used</h2>
+<h2>Languages used</h2>
+
+- PHP Language
+
+<h2>Enviroments used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
+
+<h2>Services used</h2>
+
 - Remote Desktop
 - Internet Information Services (IIS)
 - osTicket
@@ -25,10 +33,14 @@
 - Enable URL rewrite
 - Microsoft Visual C++ Redistributable
 - Deploying the webapp
+- SQL database configuration
+- osTicket configuration file configuration
+- Fully deploy the web app
+- Clean up
 
 <h2>Installation process</h2>
 
-<h3>Downloading the necessary files</h3>
+<h3>Download the necessary installation files</h3>
 <p>To install osTicket, we need to download the necessary files to our VM/computer. I'm currently using a VM, so I'll use our VM going forward. For this purpose, we could either go and search for them ourselves or download a zip. Even though downloading the zip may seem faster and easier, it carries a security risk because we don't know whether the files in the zip have been tampered with. Given our situation, I think it's best to go ahead and search for the files manually. Nevertheless, to make the process easier, I have compiled a little table with all the requirements and the original links to each one of them</p>
 
 |Requierment   |Original download link   |
@@ -168,7 +180,7 @@
 <img src="https://i.imgur.com/8UT0cHi.png"  height="25%" width="25%"/>
 <p>This is also a great point to do some troubleshooting. If, after you followed this guide, you are not seeing a website like the one shown above, I would recommend going back and reviewing every single step, ensuring you did everything as shown here</p>
 
-<h3>SQL database</h3>
+<h3>SQL database configuaration</h3>
 <p>SQL stands for structured query language, which is a programming language used to manipulate data on databases</p>
 <p>MySQL is an SQL-based database and database management system</p>
 <p>HeidiSQL is a client for SQL databases like MySQL</p>
@@ -249,7 +261,8 @@
 <img src="https://i.imgur.com/MEdMpLJ.png"  height="25%" width="25%"/>
 <p>We pick any name we want. We only need to ensure it's a name we can remember. And we click ok</p>
 <img src="https://i.imgur.com/RGPHhdI.png"  height="25%" width="25%"/>
-<h3>Configure osTicket configuarion file</h3>
+
+<h3>osTicket configuration file configuration</h3>
 <p>Now, as you may have noticed already, to install osTicket, a lot of the steps have to be done manually. But fortunately not all of them.</p>
 <p>ost-config.php is basically a file that contains code that we can run to make a lot of important configurations like creating admin login information tables in our MySQL database, defining some important security mechanisms, etc. </p>
 <p>Now we are not going to execute it manually; it is the osTicket webpage that's going to execute it to finalize the installation. Nevertheless, to allow osTicket to use this file, we need to make some important changes</p>
