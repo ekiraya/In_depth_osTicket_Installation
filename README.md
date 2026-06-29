@@ -366,3 +366,7 @@
 <p>We uncheck every box except for the read one. The window should end up looking like this.</p>
 <img src="https://i.imgur.com/VMYsl9I.png"  height="25%" width="25%"/>
 <p>We then simply click ok and apply until all windows disappear </p>
+
+<h4>Empty recylce bin</h4>
+<p>During this tutorial, we deleted plenty of important files. Now, as you may know already, on Windows, deleted files go to the recycle bin, where they can be recovered. We don't want these files to be recovered in any circumstance, so to make sure they won't be easily recoverable, we should go to the Windows desktop, find the recycle bin,  right-click, and click <code>Empty Recycle Bin</code></p>
+<img src="https://i.imgur.com/KXL5pAQ.png"  height="25%" width="25%"/>
