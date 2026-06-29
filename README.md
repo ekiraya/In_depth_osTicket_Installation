@@ -165,7 +165,7 @@
 <h3>Deploying the webapp</h3>
 <p>Now we have everything required for the osTicket webapp to run, but how do we actually run it?</p>
 <p>Remember the <code>C:\inetpub\wwwroot</code> folder that i mentioned earlier</p>
-<p>Well, if we simply switch those files with the files that define ostciket, we can convert our default webpage into osTicket</p>
+<p>Well, if we simply switch those files with the files that define osTicket, we can convert our default webpage into osTicket</p>
 
 <br>
 <p>To find the necessary files, we can go to the <code>osTicket files zip</code> and extract its contents by right-clicking and clicking extract all</p>
