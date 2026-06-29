@@ -14,6 +14,7 @@
 <h2>Enviroments used</h2>
 
 - Microsoft Azure (Virtual Machines/Computers)
+- Windows operating system
 
 <h2>Services used</h2>
 
