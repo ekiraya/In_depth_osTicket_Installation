@@ -292,7 +292,7 @@
 <img src="https://i.imgur.com/VBluFMJ.png"  height="25%" width="25%"/>
 <p>In the permissions for ost-config.php page, we should click the add option, and in the window that shows up, we need to enter "everyone"</p>
 <img src="https://i.imgur.com/ld9MhQ1.png"  height="25%" width="25%"/>
-<p>Next, in the same window, we need to click the check names option and then click okay</p>
+<p>Next, in the same window, we need to click the check names option and then click ok</p>
 <img src="https://i.imgur.com/9NcLMyW.png"  height="25%" width="25%"/>
 <p>It is recommended always to click the check names option because if we don't spell everyone exactly like this, our configuration will not be made effective</p>
 <p>Now, in our group or username list, everyone should be listed, which allows us to change the permissions for everyone</p>
