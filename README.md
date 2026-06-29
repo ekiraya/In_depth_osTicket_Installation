@@ -280,7 +280,7 @@
 <img src="https://i.imgur.com/sYvRInE.png"  height="25%" width="25%"/>
 <p>And then we simply change the file name to ost-config.php</p>
 <img src="https://i.imgur.com/I8COeWF.png"  height="25%" width="25%"/>
-<p>It must be expelled exactly like that because, as stated above, if we spell it in another way, it is likely that osTicket won't be able to find the file</p>
+<p>It must be spelled exactly like that because, as stated above, if we spell it in another way, it is likely that osTicket won't be able to find the file</p>
 <p>After doing that, osTicket will be able to find the file, but due to permissions, it may not be able to work with it</p>
 <p>To solve that, we need to right-click ost-config.php and click the propierties option</p>
 <img src="https://i.imgur.com/m1MaGs8.png"  height="25%" width="25%"/>
